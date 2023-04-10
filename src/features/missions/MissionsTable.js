@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { LeaveButton, JoinButton } from '../../components';
+import {
+  LeaveMissionButton, JoinMissionButton, InactiveBadge, ActiveBadge,
+} from '../../components';
 
 const MissionsTable = () => {
   const action = '';
@@ -25,12 +27,14 @@ const MissionsTable = () => {
                 <th scope="row" style={{ minWidth: '10rem' }}>{mission.mission_name}</th>
                 <td>{mission.description}</td>
                 <td>
-                  <span className="badge text-bg-secondary">NOT A MEMBER</span>
+                  {
+                        mission.reserved ? <ActiveBadge /> : <InactiveBadge />
+                    }
                 </td>
                 <td style={{ minWidth: '10rem', textAlign: 'center' }}>
                   {
-                    mission.reserved ? <LeaveButton missionId={mission.mission_id} />
-                      : <JoinButton missionId={mission.mission_id} />
+                    mission.reserved ? <LeaveMissionButton missionId={mission.mission_id} />
+                      : <JoinMissionButton missionId={mission.mission_id} />
                   }
                 </td>
               </tr>
