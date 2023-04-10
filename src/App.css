@@ -10,3 +10,7 @@
 .navbar-nav .nav-link a.active {
   text-decoration: underline;
 }
+
+td {
+  vertical-align: middle;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { MissionsTable } from '../features';
 
 const Missions = () => (
-  <div>
+  <div className="py-4">
     <MissionsTable />
   </div>
 );
