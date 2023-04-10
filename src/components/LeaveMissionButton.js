@@ -11,7 +11,7 @@ const LeaveMissionButton = (props) => {
 };
 
 LeaveMissionButton.propTypes = {
-  missionId: PropTypes.number.isRequired,
+  missionId: PropTypes.string.isRequired,
 };
 
 export default LeaveMissionButton;

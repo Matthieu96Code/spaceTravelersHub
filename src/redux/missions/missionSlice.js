@@ -1,19 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
+import fetchMission from './missionThunk';
 
 const initialState = {
-  missions: [{
-    mission_id: 1,
-    mission_name: 'Thaicom',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis, ullam officia cumque repudiandae quisquam libero eum, eveniet ducimus quo, quae vero adipisci! Odit necessitatibus at accusamus aut delectus inventore, amet est rerum consequatur ipsa ipsum dignissimos excepturi labore sit debitis nisi nobis quibusdam fugit natus alias quam similique molestiae eveniet. Non eos qui quos fugiat magni inventore voluptates nostrum maiores, molestiae reiciendis facilis. Eos, laborum in molestias fugit, facere praesentium blanditiis, quo nulla aut beatae voluptatibus aspernatur. Pariatur dolorem velit quod fugiat maxime magnam veniam illo, consectetur, suscipit enim consequatur earum autem atque sit culpa? Numquam maxime corporis blanditiis?',
-    reserved: false,
-  },
-  {
-    mission_id: 2,
-    mission_name: 'Thaicom',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis, ullam officia cumque repudiandae quisquam libero eum, eveniet ducimus quo, quae vero adipisci! Odit necessitatibus at accusamus aut delectus inventore, amet est rerum consequatur ipsa ipsum dignissimos excepturi labore sit debitis nisi nobis quibusdam fugit natus alias quam similique molestiae eveniet. Non eos qui quos fugiat magni inventore voluptates nostrum maiores, molestiae reiciendis facilis. Eos, laborum in molestias fugit, facere praesentium blanditiis, quo nulla aut beatae voluptatibus aspernatur. Pariatur dolorem velit quod fugiat maxime magnam veniam illo, consectetur, suscipit enim consequatur earum autem atque sit culpa? Numquam maxime corporis blanditiis?',
-    reserved: false,
-  },
-  ],
+  missions: [],
+  loading: false,
+  error: null,
 };
 
 const missionSlice = createSlice({
@@ -50,6 +41,28 @@ const missionSlice = createSlice({
         missions: updatedMissions,
       };
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchMission.pending, (state) => ({
+      ...state,
+      loading: true,
+    }))
+      .addCase(fetchMission.fulfilled, (state, action) => {
+        const mappedMissions = action.payload.data.map((mission) => ({
+          ...mission,
+          reserved: false,
+        }));
+
+        return {
+          ...state,
+          missions: mappedMissions,
+          error: null,
+        };
+      })
+      .addCase(fetchMission.rejected, (state, action) => ({
+        ...state,
+        error: action.payload,
+      }));
   },
 });
 

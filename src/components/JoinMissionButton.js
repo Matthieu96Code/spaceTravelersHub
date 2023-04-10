@@ -11,7 +11,7 @@ const JoinMissionButton = (props) => {
 };
 
 JoinMissionButton.propTypes = {
-  missionId: PropTypes.number.isRequired,
+  missionId: PropTypes.string.isRequired,
 };
 
 export default JoinMissionButton;
