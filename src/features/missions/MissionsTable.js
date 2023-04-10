@@ -10,7 +10,7 @@ const MissionsTable = () => {
 
   return (
     <div className="missions-table">
-      <table className="table table-striped table-hover table-bordered">
+      <table className="table table-striped table-responsive table-bordered">
         <thead>
           <tr>
             <th scope="col">Mission</th>
@@ -21,10 +21,10 @@ const MissionsTable = () => {
         </thead>
         <tbody>
           {
-            missions.length && missions.map((mission) => (
+            missions.length ? missions.map((mission) => (
 
               <tr key={mission.mission_id}>
-                <th scope="row" style={{ minWidth: '10rem' }}>{mission.mission_name}</th>
+                <th scope="row" style={{ minWidth: '8rem' }}>{mission.mission_name}</th>
                 <td>{mission.description}</td>
                 <td>
                   {
@@ -38,7 +38,7 @@ const MissionsTable = () => {
                   }
                 </td>
               </tr>
-            ))
+            )) : (<></>)
         }
         </tbody>
       </table>

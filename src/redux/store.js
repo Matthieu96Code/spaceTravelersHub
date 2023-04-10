@@ -5,6 +5,9 @@ const store = configureStore({
   reducer: {
     mission: missionSlice,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+    serializableCheck: false,
+  }),
 });
 
 export default store;
