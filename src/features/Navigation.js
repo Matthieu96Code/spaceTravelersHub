@@ -18,7 +18,7 @@ const Navigation = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0 gap-2 gap-sm-2 gap-md-2 gap-lg-4">
             <li className="nav-link">
-              <NavLink to="rockets"> Rockets</NavLink>
+              <NavLink to="/"> Rockets</NavLink>
             </li>
 
             <li className="nav-link">
