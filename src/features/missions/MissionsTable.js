@@ -9,7 +9,7 @@ const MissionsTable = () => {
   const missions = useSelector((state) => state.mission.missions);
 
   return (
-    <div className="missions-table">
+    <div className="missions-table overflow-x-auto">
       <table className="table table-striped table-responsive table-bordered">
         <thead>
           <tr>
