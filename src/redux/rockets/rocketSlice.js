@@ -13,7 +13,7 @@ const rocketSlice = createSlice({
   reducers: {
     reserveRocket: (state, action) => {
       const updatedRockets = state.rockets.map((rocket) => {
-        if (rocket.rocket_id === action.payload.rocketId) {
+        if (rocket.rocket_id === action.payload.reservationId) {
           return {
             ...rocket,
             reserved: true,
@@ -28,7 +28,7 @@ const rocketSlice = createSlice({
     },
     cancelResevation: (state, action) => {
       const updatedRockets = state.rockets.map((rocket) => {
-        if (rocket.rocket_id === action.payload.rocketId) {
+        if (rocket.rocket_id === action.payload.reservationId) {
           return {
             ...rocket,
             reserved: false,
