@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import fetchRocket from '../redux/rockets/rocketThunk';
 
-const Rockets = () => (
-  <div>Rockets</div>
-);
+const Rockets = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRocket());
+  }, [dispatch]);
+
+  return (<div>Rockets</div>);
+};
 
 Rockets.propTypes = {};
 
