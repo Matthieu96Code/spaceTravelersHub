@@ -24,7 +24,7 @@ const JoinedMissions = () => {
           <div>
             No Joined Missions Available!.
             {' '}
-            <NavLink to="/missions" class="alert-link">Join Mission</NavLink>
+            <NavLink to="/missions" className="alert-link">Join Mission</NavLink>
             .
           </div>
 
