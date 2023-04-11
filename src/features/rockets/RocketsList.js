@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { ReservedRocketButton, CancelReservationButton, ReservedBadge } from '../../components';
+import { ReserveRocketButton, CancelReservationButton, ReservedBadge } from '../../components';
 
 const RocketsList = () => {
   // const action = '';
@@ -22,7 +22,7 @@ const RocketsList = () => {
             </div>
             {
               rocket.reserved ? <CancelReservationButton reservationId={rocket.rocket_id} />
-                : <ReservedRocketButton reservationId={rocket.rocket_id} />
+                : <ReserveRocketButton reservationId={rocket.rocket_id} />
             }
           </div>
         </div>
