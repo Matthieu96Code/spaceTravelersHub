@@ -7,3 +7,4 @@ export { default as ActiveBadge } from './ActiveBadge';
 export { default as ReserveRocketButton } from './ReserveRocketButton';
 export { default as CancelReservationButton } from './CancelReservationButton';
 export { default as ReservedBadge } from './ReservedBadge';
+export { default as ReservedRockets } from './ReservedRockets';
