@@ -2,15 +2,3 @@
   width: 95%;
   margin: auto;
 }
-
-.navbar-nav .nav-link a {
-  text-decoration: none;
-}
-
-.navbar-nav .nav-link a.active {
-  text-decoration: underline;
-}
-
-td {
-  vertical-align: middle;
-}

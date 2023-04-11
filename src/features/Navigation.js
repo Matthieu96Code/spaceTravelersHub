@@ -7,7 +7,7 @@ const Navigation = () => {
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container py-2">
+      <div className="container-fluid py-2">
         <a className="navbar-brand d-flex align-items-center gap-3 fw-semibold" href="/">
           <img src={logo} width="50px" alt={title} />
           <span className="d-none d-sm-none d-md-block d-lg-block">{title}</span>
@@ -25,6 +25,9 @@ const Navigation = () => {
               <NavLink to="missions"> Missions</NavLink>
             </li>
           </ul>
+          <div className="nav-link">
+            <NavLink to="profile" className="px-3 border-2 border-dark border-start" style={{ marginLeft: '10px' }}> Profile</NavLink>
+          </div>
         </div>
       </div>
     </nav>

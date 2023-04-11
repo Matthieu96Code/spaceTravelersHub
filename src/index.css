@@ -10,3 +10,23 @@ body {
 .navbar {
   border-bottom: 1px solid #b9b9b9;
 }
+
+.nav-link {
+  padding: 0 10px;
+}
+
+.nav-link a {
+  text-decoration: none;
+}
+
+.nav-link a.active {
+  text-decoration: underline;
+}
+
+td {
+  vertical-align: middle;
+}
+
+.list-group-item {
+  padding: 1rem 0 22px 1.7rem;
+}
