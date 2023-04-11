@@ -24,7 +24,7 @@ const ReservedRockets = () => {
           <div>
             No Reserved Rocket Available!.
             {' '}
-            <NavLink to="/rockets" className="alert-link">Reserve Rocket</NavLink>
+            <NavLink to="/" className="alert-link">Reserve Rocket</NavLink>
             .
           </div>
 
