@@ -30,3 +30,14 @@ td {
 .list-group-item {
   padding: 1rem 0 22px 1.7rem;
 }
+
+svg {
+  width: 20px;
+}
+
+@media (max-width: 600px) {
+  .nav-link a {
+    border: none !important;
+    margin-left: 0 !important;
+  }
+}

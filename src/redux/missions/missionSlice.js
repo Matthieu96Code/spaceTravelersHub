@@ -3,7 +3,6 @@ import fetchMission from './missionThunk';
 
 const initialState = {
   missions: [],
-  loading: false,
   error: null,
 };
 
@@ -43,22 +42,18 @@ const missionSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchMission.pending, (state) => ({
-      ...state,
-      loading: true,
-    }))
-      .addCase(fetchMission.fulfilled, (state, action) => {
-        const mappedMissions = action.payload.data.map((mission) => ({
-          ...mission,
-          reserved: false,
-        }));
+    builder.addCase(fetchMission.fulfilled, (state, action) => {
+      const mappedMissions = action.payload.data.map((mission) => ({
+        ...mission,
+        reserved: false,
+      }));
 
-        return {
-          ...state,
-          missions: mappedMissions,
-          error: null,
-        };
-      })
+      return {
+        ...state,
+        missions: mappedMissions,
+        error: null,
+      };
+    })
       .addCase(fetchMission.rejected, (state, action) => ({
         ...state,
         error: action.payload,

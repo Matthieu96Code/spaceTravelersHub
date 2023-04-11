@@ -26,7 +26,7 @@ const Navigation = () => {
             </li>
           </ul>
           <div className="nav-link">
-            <NavLink to="profile" className="px-3 border-2 border-dark border-start" style={{ marginLeft: '10px' }}> Profile</NavLink>
+            <NavLink to="profile" className="px-0 px-sm-0 px-md-3 px-lg-3 border-0 border-sm-0 border-md-2 border-lg-2 border-dark border-start" style={{ marginLeft: '10px' }}> Profile</NavLink>
           </div>
         </div>
       </div>
