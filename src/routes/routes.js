@@ -19,8 +19,6 @@ const router = createBrowserRouter([
       {
         path: 'rockets',
         element: <Rockets />,
-        path: 'profile',
-        element: <Profile />,
       },
       {
         path: 'profile',
