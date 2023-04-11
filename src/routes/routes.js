@@ -2,7 +2,9 @@ import {
   createBrowserRouter,
 } from 'react-router-dom';
 import App from '../App';
-import { Missions, Rockets, Profile, NotFoundPage } from '../pages';
+import Missions from '../pages/Missions';
+import Rockets from '../pages/Rockets';
+import { Profile, NotFoundPage } from '../pages';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: 'rockets',
         element: <Rockets />,
+        path: 'profile',
+        element: <Profile />,
+      },
+      {
         path: 'profile',
         element: <Profile />,
       },
