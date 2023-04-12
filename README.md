@@ -1,11 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-
-  <h1><b>Space Traveler's Hub</b></h1>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -28,9 +22,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [BookStore CMS] <a name="about-project"></a>
+# 📖 [Space Traveler's Hub] <a name="about-project"></a>
 
-Space Traveler's Hub is an application that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+Space Traveler's Hub is an application that provides commercial and scientific space travel services. The application allow users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
