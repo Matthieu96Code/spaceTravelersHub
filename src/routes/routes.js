@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         element: <Missions />,
       },
       {
-        path: 'rockets',
+        path: '/',
         element: <Rockets />,
       },
       {

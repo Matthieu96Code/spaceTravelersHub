@@ -1,18 +1,9 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import fetchRocket from '../redux/rockets/rocketThunk';
-import RocketsList from '../features/rockets/RocketsList';
+import { RocketsList } from '../features';
 
-const Rockets = () => {
-  const dispatch = useDispatch();
+const Rockets = () => (
 
-  useEffect(() => {
-    dispatch(fetchRocket());
-  }, [dispatch]);
+  <RocketsList />
 
-  return (<RocketsList />);
-};
-
-Rockets.propTypes = {};
+);
 
 export default Rockets;
