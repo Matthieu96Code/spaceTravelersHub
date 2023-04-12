@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Join Mission Button should render join mission button 1`] = `
+<button
+  className="btn btn-outline-secondary btn-sm"
+  onClick={[Function]}
+  type="button"
+>
+  Join Mission
+</button>
+`;

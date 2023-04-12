@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions Table render list of missions 1`] = `
+<div
+  className="missions-table overflow-x-auto"
+>
+  <table
+    className="table table-striped table-responsive table-bordered"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          Mission
+        </th>
+        <th
+          scope="col"
+        >
+          Description
+        </th>
+        <th
+          scope="col"
+        >
+          Status
+        </th>
+        <th
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="mission_info"
+      >
+        <th
+          scope="row"
+          style={
+            Object {
+              "minWidth": "8rem",
+            }
+          }
+        >
+          Thaicom
+        </th>
+        <td>
+          Thaicom is the name of a series of communications satellites operated from Thailand
+        </td>
+        <td>
+          <span
+            className="badge text-bg-secondary fw-semibold"
+          >
+            NOT A MEMBER
+          </span>
+        </td>
+        <td
+          style={
+            Object {
+              "minWidth": "10rem",
+              "textAlign": "center",
+            }
+          }
+        >
+          <button
+            className="btn btn-outline-secondary btn-sm"
+            onClick={[Function]}
+            type="button"
+          >
+            Join Mission
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

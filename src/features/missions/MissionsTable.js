@@ -23,7 +23,7 @@ const MissionsTable = () => {
           {
             missions.length ? missions.map((mission) => (
 
-              <tr key={mission.mission_id}>
+              <tr className="mission_info" key={mission.mission_id}>
                 <th scope="row" style={{ minWidth: '8rem' }}>{mission.mission_name}</th>
                 <td>{mission.description}</td>
                 <td>

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leave Mission Button should render leave mission button 1`] = `
+<button
+  className="btn btn-outline-danger btn-sm"
+  onClick={[Function]}
+  type="button"
+>
+  Leave Mission
+</button>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Join Mission Badge should render active badge 1`] = `
+<span
+  className="badge text-bg-primary fw-semibold"
+>
+  ACTIVE MEMBER
+</span>
+`;
