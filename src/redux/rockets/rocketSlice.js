@@ -48,7 +48,7 @@ const rocketSlice = createSlice({
       loading: true,
     }))
       .addCase(fetchRocket.fulfilled, (state, action) => {
-        const mappedRockets = action.payload.data.map((rockets) => ({
+        const mappedRockets = action.payload.map((rockets) => ({
           ...rockets,
           reserved: false,
         }));
