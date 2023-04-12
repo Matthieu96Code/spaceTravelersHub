@@ -6,6 +6,4 @@ const Rockets = () => (
 
 );
 
-Rockets.propTypes = {};
-
 export default Rockets;

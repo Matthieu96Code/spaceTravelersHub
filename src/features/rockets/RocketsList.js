@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { ReserveRocketButton, CancelReservationButton, ReservedBadge } from '../../components';
 
 const RocketsList = () => {
-  // const action = '';
   const rockets = useSelector((state) => state.rocket.rockets);
   return (
     <div className="rockets-list">
