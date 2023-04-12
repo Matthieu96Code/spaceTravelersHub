@@ -43,7 +43,7 @@ const missionSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(fetchMission.fulfilled, (state, action) => {
-      const mappedMissions = action.payload.data.map((mission) => ({
+      const mappedMissions = action.payload.map((mission) => ({
         ...mission,
         reserved: false,
       }));
