@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 import { Navigation } from './features';
-import fetchMission from './redux/missions/missionThunk';
+// import fetchMission from './redux/missions/missionThunk';
 import fetchRocket from './redux/rockets/rocketThunk';
 import './App.css';
 
@@ -10,7 +10,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchMission());
+    // dispatch(fetchMission());
     dispatch(fetchRocket());
   }, [dispatch]);
 
