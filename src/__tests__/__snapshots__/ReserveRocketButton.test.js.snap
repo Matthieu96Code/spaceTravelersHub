@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reserve Rocket Button should render reserve rocket button 1`] = `
+<button
+  className="btn btn-primary btn-sm"
+  onClick={[Function]}
+  type="button"
+>
+  Reserve Rocket
+</button>
+`;

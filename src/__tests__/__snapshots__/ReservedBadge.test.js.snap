@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reserved Rocket Badge should render Reserved badge 1`] = `
+<span
+  className="badge text-bg-info fw-semibold"
+>
+  Reseved
+</span>
+`;
