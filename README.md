@@ -53,6 +53,9 @@ Space Traveler's Hub is an application that provides commercial and scientific s
 ![Missions](./screenshots/missions.png)
 ![Profile](./screenshots/profile.png)
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -106,7 +109,7 @@ To run the project, execute the following command:
 
 - GitHub: [@Matthieu96Code](https://github.com/Matthieu96Code)
 - Twitter: [@MatthieuSENOU](https://twitter.com/MatthieuSenou)
-- LinkedIn: [Kodjo Matthieu SENOU](https://www.linkedin.com/inkodjo-matthieu-senou-724a50210/)
+- LinkedIn: [Kodjo Matthieu SENOU](https://www.linkedin.com/in/kodjo-matthieu-senou/)
 
 👤 **Stephen Addae**
 
