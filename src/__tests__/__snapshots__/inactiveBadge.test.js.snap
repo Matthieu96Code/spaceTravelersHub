@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leave Mission Badge should render inactive badge 1`] = `
+<span
+  className="badge text-bg-secondary fw-semibold"
+>
+  NOT A MEMBER
+</span>
+`;
