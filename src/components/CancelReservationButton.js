@@ -19,7 +19,7 @@ const CancelReservationButton = (props) => {
 };
 
 CancelReservationButton.propTypes = {
-  reservationId: PropTypes.string.isRequired,
+  reservationId: PropTypes.number.isRequired,
 };
 
 export default CancelReservationButton;

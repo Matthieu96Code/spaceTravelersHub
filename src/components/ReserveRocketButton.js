@@ -11,7 +11,7 @@ const ReserveRocketButton = (props) => {
 };
 
 ReserveRocketButton.propTypes = {
-  reservationId: PropTypes.string.isRequired,
+  reservationId: PropTypes.number.isRequired,
 };
 
 export default ReserveRocketButton;

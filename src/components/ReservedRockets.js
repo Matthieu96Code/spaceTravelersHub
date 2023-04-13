@@ -11,7 +11,7 @@ const ReservedRockets = () => {
       {rockets.length ? (
         <ul className="list-group">
           {rockets.map((rocket) => (
-            <li className="list-group-item" key={rocket.rocket_id}>
+            <li className="list-group-item" key={rocket.id}>
               {rocket.rocket_name}
             </li>
           ))}

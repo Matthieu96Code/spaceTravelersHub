@@ -13,7 +13,7 @@ const rocketSlice = createSlice({
   reducers: {
     reserveRocket: (state, action) => {
       const updatedRockets = state.rockets.map((rocket) => {
-        if (rocket.rocket_id === action.payload.reservationId) {
+        if (rocket.id === action.payload.reservationId) {
           return {
             ...rocket,
             reserved: true,
@@ -28,7 +28,7 @@ const rocketSlice = createSlice({
     },
     cancelResevation: (state, action) => {
       const updatedRockets = state.rockets.map((rocket) => {
-        if (rocket.rocket_id === action.payload.reservationId) {
+        if (rocket.id === action.payload.reservationId) {
           return {
             ...rocket,
             reserved: false,
@@ -48,8 +48,11 @@ const rocketSlice = createSlice({
       loading: true,
     }))
       .addCase(fetchRocket.fulfilled, (state, action) => {
-        const mappedRockets = action.payload.map((rockets) => ({
-          ...rockets,
+        const mappedRockets = action.payload.map((rocket) => ({
+          id: rocket.id,
+          rocket_name: rocket.rocket_name,
+          description: rocket.description,
+          flickr_images: rocket.flickr_images,
           reserved: false,
         }));
 

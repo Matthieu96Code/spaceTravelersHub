@@ -7,7 +7,7 @@ const RocketsList = () => {
   return (
     <div className="rockets-list">
       {rockets.map((rocket) => (
-        <div key={rocket.rocket_id} className="row py-3">
+        <div key={rocket.id} className="row py-3">
           <div className="col-4">
             <img className="img-fluid" src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
           </div>
@@ -20,8 +20,8 @@ const RocketsList = () => {
               </p>
             </div>
             {
-              rocket.reserved ? <CancelReservationButton reservationId={rocket.rocket_id} />
-                : <ReserveRocketButton reservationId={rocket.rocket_id} />
+              rocket.reserved ? <CancelReservationButton reservationId={rocket.id} />
+                : <ReserveRocketButton reservationId={rocket.id} />
             }
           </div>
         </div>
