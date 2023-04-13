@@ -109,7 +109,7 @@ To run the project, execute the following command:
 
 - GitHub: [@Matthieu96Code](https://github.com/Matthieu96Code)
 - Twitter: [@MatthieuSENOU](https://twitter.com/MatthieuSenou)
-- LinkedIn: [Kodjo Matthieu SENOU](https://www.linkedin.com/inkodjo-matthieu-senou-724a50210/)
+- LinkedIn: [Kodjo Matthieu SENOU](https://www.linkedin.com/inkodjo-matthieu-senou)
 
 👤 **Stephen Addae**
 
